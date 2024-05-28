@@ -1,0 +1,180 @@
+/* .background-photo {
+  width: 90%;
+  animation: easeInOut 6s linear infinite alternate;
+  background: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: relative; 
+}
+
+.bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  flex-grow: 1;
+  max-width: 50%; 
+  padding-left: 70px;
+}
+
+.bonus h1 {
+  font-size: 2rem;
+  color: #fff; 
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.bonus-free {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.button-claim {
+  background-color: #00c896;
+  color: white;
+  font-weight: bold;
+  width: auto;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container {
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes easeInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background: rgba(19, 22, 31, 0.459);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 23%;
+  height: 23%;
+  padding-right: 30px;
+  background: none;
+}
+
+.bonus img {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.zzz {
+  background: none;
+}
+
+.bonus button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.button-claim {
+  width: 190px;
+  height: 60px;
+  background: rgb(4, 255, 217);
+  background: linear-gradient(
+    180deg,
+    rgb(4, 255, 217) 0%,
+    rgb(0, 152, 125) 100%
+  );
+  color: white; /* White text color */
+  border: none;
+  padding: 15px 30px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px #00000080;
+  border-top: solid 1px #89ffef;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button-claim:hover {
+  background: #007aff;
+  box-shadow: 0 10px 10px #00000080;
+  border-top: solid 1px #89ffef;
+  transform: scale(1.2);
+}
+
+.mro-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: easeInOut 5s infinite;
+  background: none;
+  padding-top: 70px;
+}
+
+@keyframes easeInOut {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}

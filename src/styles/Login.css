@@ -1,0 +1,108 @@
+/* Login.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Povećajte vrednost z-index-a da bi pop-up bio iznad svega */
+}
+
+.popup {
+  background: white;
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.login-tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-tab.active {
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.captcha-success {
+  color: green;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.captcha-branding {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-branding img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.login-button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  color: blue;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}

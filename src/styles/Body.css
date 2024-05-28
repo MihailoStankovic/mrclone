@@ -1,0 +1,50 @@
+.blueColor{
+    color: #0477fe;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.h1{
+    width: 76.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    width: 75%;
+}
+
+.body p {
+    padding-bottom: 80px;
+    background: red;
+    background: none;
+}
+
+h1{
+    background: none;
+}
+
+strong {
+    background: none;
+}
+
+span{
+    background: none;
+}
+
+.paragraph{
+    background: none;
+}
+

@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.zz {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* .last-games {
+  width: 95%;
+}
+
+.top-games{
+  width: 95%;
+} */
+
+.slick-list{
+  width: 95%;
+  background: none;
+}
+
+.elite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.elite-club {
+  background: none;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.elite-img {
+  border-radius: 20px;
+  width: 28%;
+  height: 100%;
+  animation: shining 3s infinite alternate; /* Dodajemo animaciju shining */
+}
+
+@keyframes shining {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(150%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+.elite-img:hover{
+  border: 1px solid gold;
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+
+.carousel {
+  padding: 5rem;
+  background-color: #20222f;
+  border-radius: 20px;
+  color: white;
+  height: 100%;
+  width: 80%;
+}
+
+.box {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.box img {
+  width: 100%;
+  height: 75%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.box .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.box .play-button {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: playButtonAnimation 0.5s ease-out forwards;
+}
+
+.box .play-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.box:hover img {
+  transform: scale(1.1); /* Zoom effect */
+  border: 2px solid blue;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes playButtonAnimation {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slick-slide div {
+  margin: 0 0rem;
+  background-color: #20222f;
+}
+
+.slick-dots {
+  background: #20222f;
+}
+
+.slick-dots button {
+  background: #20222f !important;
+}
+
+.slick-slide {
+  background-color: #20222f;
+}
+
+.slick-dots li.slick-active button:before {
+  color: lightgreen !important;
+}
+
+.slick-dots li button:before {
+  color: #fff !important;
+  font-size: 1rem !important;
+  top: 2rem !important;
+}
+
+.slick-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-initialized {
+  width: 100%;
+  height: 100%;
+}
+
+.latest-games,
+.top-games {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  background: #20222f;
+}
+
+.btn-div {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background: none;
+}
+
+.button-view {
+  width: 290px;
+  height: 50px;
+  background: rgb(4, 255, 217);
+  background: linear-gradient(
+    180deg,
+    rgb(4, 255, 217) 0%,
+    rgb(0, 152, 125) 100%
+  );
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px #00000080;
+  border-top: solid 1px #89ffef;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.button-view:hover {
+  background: #007aff;
+  box-shadow: 0 10px 10px #00000080;
+  border-top: solid 1px #89ffef;
+  transform: scale(1.2);
+}
+
+.btn-latestgames,
+.btn-topgames {
+  width: 50px;
+  height: 20%;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px #00000080;
+  display: flex;
+  margin: 0 20px 0 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 216) 0%,
+    rgb(115, 42, 235) 100%
+  );
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-topgames {
+  background: linear-gradient(
+    90deg,
+    rgb(242, 113, 33) 0%,
+    rgb(233, 64, 87) 50%,
+    rgb(138, 35, 135) 100%
+  );
+}

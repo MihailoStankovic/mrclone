@@ -1,0 +1,40 @@
+.pictures {    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    gap: 15rem;
+}
+
+.eighteen {
+    width: 4%;
+    background: none;
+}
+
+.cds{
+    width: 11%;
+    background: none;
+}
+
+.spin-logic{
+    width: 10%;
+    background: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    padding-top: 20px;
+    padding-left: 300px;
+    padding-bottom: 50px;
+    
+}
+
+.copyright p {
+    background: none;
+}
+
+.footer {
+    background: none;
+}
